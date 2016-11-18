@@ -1,0 +1,21 @@
+<!-- [ Mirror metadata ] generatedAt: 1463047696432 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/content_current_weather">
+        <!-- TextView Examples:
+        <textView_current_date text="@string/string_resource" />
+        <textView_current_date text="Text literal" textSize="14sp" /> -->
+        <textView_current_date />
+        <textView_current_high_temp />
+        <textView_min_temp />
+        <!-- ImageView Examples:
+        <imageView_current src="@drawable/image_resource" />
+        <imageView_current src="relative_path/image.jpg" /> -->
+        <imageView_current />
+        <textView_current_description />
+    </_content>
+</screen>

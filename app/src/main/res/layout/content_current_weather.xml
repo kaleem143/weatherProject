@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Today,April 7"
+        android:textSize="22sp"
+        android:textColor="@color/text_color_white"
+        android:id="@+id/textView_current_date"
+        android:layout_alignTop="@+id/imageView_current"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:textColor="@color/text_color_white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="21°"
+        android:id="@+id/textView_current_high_temp"
+        android:layout_below="@+id/textView_current_date"
+        android:layout_alignLeft="@+id/textView_current_date"
+        android:layout_alignStart="@+id/textView_current_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+
+        android:textColor="@color/text_color_white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="14°"
+        android:id="@+id/textView_min_temp"
+        android:layout_below="@+id/textView_current_high_temp"
+        android:layout_alignLeft="@+id/textView_current_high_temp"
+        android:layout_alignStart="@+id/textView_current_high_temp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView_current"
+        android:src="@drawable/art_clouds"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView_current_date"
+        android:layout_toEndOf="@+id/textView_current_date"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Clear"
+        android:textColor="@color/text_color_white"
+        android:textSize="22sp"
+        android:id="@+id/textView_current_description"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_below="@+id/imageView_current"
+        android:layout_alignRight="@+id/imageView_current"
+        android:layout_alignEnd="@+id/imageView_current" />
+</RelativeLayout>

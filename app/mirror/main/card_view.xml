@@ -1,0 +1,21 @@
+<!-- [ Mirror metadata ] generatedAt: 1463047696412 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/card_view">
+        <!-- ImageView Examples:
+        <weather_photo src="@drawable/image_resource" />
+        <weather_photo src="relative_path/image.jpg" /> -->
+        <weather_photo />
+        <!-- TextView Examples:
+        <weather_day text="@string/string_resource" />
+        <weather_day text="Text literal" textSize="14sp" /> -->
+        <weather_day />
+        <weather_description />
+        <max_temp />
+        <min_temp />
+    </_content>
+</screen>
